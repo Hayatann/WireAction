@@ -318,21 +318,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/CharacterEditorPackage
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/CharacterEditorPackage
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\hayat\Documents\WireAction\WireAction_Test
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2c430000
-    m_LastClickedID: 17196
+    m_SelectedIDs: 32430000
+    m_LastClickedID: 17202
     m_ExpandedIDs: 000000002c4300002e43000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
