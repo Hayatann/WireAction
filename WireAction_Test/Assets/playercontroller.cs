@@ -35,6 +35,9 @@ public class playercontroller : MonoBehaviour
         {
             jumpCount = 0;
         }
+        if (other.gameObject.CompareTag("dead")){
+            
+        }
     }
     
 }
