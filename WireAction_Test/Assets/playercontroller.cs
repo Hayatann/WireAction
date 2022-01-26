@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class playercontroller : MonoBehaviour
 {
     private Rigidbody2D rbody2D;
@@ -35,8 +35,8 @@ public class playercontroller : MonoBehaviour
         {
             jumpCount = 0;
         }
-        if (other.gameObject.CompareTag("dead")){
-            
+        if (other.gameObject.tag == "dead"){
+            SceneManager.LoadScene("GameOver");
         }
     }
     
