@@ -29,6 +29,7 @@ public class playercontroller : MonoBehaviour
 
         if(y < -50){
             SceneManager.LoadScene("GameOver");
+            GameManager.instance.score = 0;
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && this.jumpCount < 2)
@@ -49,10 +50,12 @@ public class playercontroller : MonoBehaviour
         }
         if (other.gameObject.tag == "dead"){
             SceneManager.LoadScene("GameOver"); //針に触れたらGameOverシーン呼び出すよ
-        }
+            GameManager.instance.score = 0;
+       }
 
         if (other.gameObject.tag == "Goal"){
             SceneManager.LoadScene("GoalScene"); //旗に触れたらゴールシーン呼び出すよ
+            GameManager.instance.score = 0;
         }
     }
     
