@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class playercontroller : MonoBehaviour
 {
     private Rigidbody2D rbody2D;
 
     private float jumpForce = 300.0f;
+   
 
     public int jumpCount = 0;
 
     float walkspeed = 6.0f;
 
-    public static playercontroller instance;
 
     void Start()
     {
@@ -27,7 +28,7 @@ public class playercontroller : MonoBehaviour
         float y = worldPos.y;    // ワールド座標を基準にした、y座標が入っている変数
         float z = worldPos.z; 
 
-        if(y < -50){
+        if(y < -25){
             SceneManager.LoadScene("GameOver");
             GameManager.instance.score = 0;
         }
