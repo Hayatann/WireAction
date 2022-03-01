@@ -8,11 +8,11 @@ public class playercontroller : MonoBehaviour
 
     private float jumpForce = 300.0f;
 
-    private int jumpCount = 0;
+    public int jumpCount = 0;
 
     float walkspeed = 6.0f;
 
-    
+    public static playercontroller instance;
 
     void Start()
     {
@@ -37,6 +37,8 @@ public class playercontroller : MonoBehaviour
             this.rbody2D.AddForce(transform.up * jumpForce);
             jumpCount++;
         }
+
+        
         
         this.transform.position += new Vector3(walkspeed * Time.deltaTime, 0 ,0);
     }
