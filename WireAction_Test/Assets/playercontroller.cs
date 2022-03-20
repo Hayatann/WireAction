@@ -22,6 +22,7 @@ public class playercontroller : MonoBehaviour
 
     void Update()
     {
+        rbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
         Transform Playertransform = this.transform;
         Vector3 worldPos = Playertransform.position;
         float x = worldPos.x;    // ワールド座標を基準にした、x座標が入っている変数
@@ -35,7 +36,9 @@ public class playercontroller : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && this.jumpCount < 2)
         {
+            rbody2D.constraints = RigidbodyConstraints2D.FreezePositionY;
             this.rbody2D.AddForce(transform.up * jumpForce);
+            rbody2D.constraints = RigidbodyConstraints2D.None;
             jumpCount++;
         }
 

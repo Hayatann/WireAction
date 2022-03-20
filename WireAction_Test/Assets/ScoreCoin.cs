@@ -19,7 +19,7 @@ public class ScoreCoin : MonoBehaviour
     {
         if(playerCheck.isOn){
             if(GameManager.instance != null){
-                script.jumpCount = 0;
+                //script.jumpCount = 0;
                 GameManager.instance.score += myScore;
                 Destroy(this.gameObject);
             }

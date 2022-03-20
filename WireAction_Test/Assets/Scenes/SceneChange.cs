@@ -14,7 +14,7 @@ public class SceneChange : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.S)){
-            SceneManager.LoadScene("GameScene");
+            SceneManager.LoadScene("Stage1");
         }
 
           if(Input.GetKeyDown(KeyCode.E)){
