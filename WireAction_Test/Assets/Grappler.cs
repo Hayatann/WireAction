@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Grappler : MonoBehaviour
 {
-     public Camera mainCamera;
+    public Camera mainCamera;
     public LineRenderer _lineRenderer;
     public DistanceJoint2D _distanceJoint;
 

@@ -8,7 +8,7 @@ public class playercontroller : MonoBehaviour
     private Rigidbody2D rbody2D;
 
     private float jumpForce = 300.0f;
-   
+
 
     public int jumpCount = 0;
 
@@ -36,6 +36,7 @@ public class playercontroller : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && this.jumpCount < 2)
         {
+            GetComponent<AudioSource>().Play();
             rbody2D.constraints = RigidbodyConstraints2D.FreezePositionY;
             this.rbody2D.AddForce(transform.up * jumpForce);
             rbody2D.constraints = RigidbodyConstraints2D.None;
@@ -57,7 +58,7 @@ public class playercontroller : MonoBehaviour
         if (other.gameObject.tag == "dead"){
             SceneManager.LoadScene("GameOver"); //針に触れたらGameOverシーン呼び出すよ
             GameManager.instance.score = 0;
-       }
+    }
 
         if (other.gameObject.tag == "Goal"){
             SceneManager.LoadScene("GoalScene"); //旗に触れたらゴールシーン呼び出すよ

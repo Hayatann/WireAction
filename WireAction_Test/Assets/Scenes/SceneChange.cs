@@ -5,21 +5,27 @@ using UnityEngine.SceneManagement;
 public class SceneChange : MonoBehaviour
 {
     // Start is called before the first frame update
+    
+    
     void Start()
     {
-        
+        FadeManager.FadeIn();
     }
 
     // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.S)){
-            SceneManager.LoadScene("Stage1");
+            FadeManager.FadeOut(1);
         }
 
-          if(Input.GetKeyDown(KeyCode.E)){
-              Application.Quit();
-          }
+        if(Input.GetKeyDown(KeyCode.H)){
+            FadeManager.FadeOut(2);
+        }
+
+        if(Input.GetKeyDown(KeyCode.E)){
+            Application.Quit();
+        }
     }
 
 }

@@ -7,6 +7,7 @@ public class ScoreCoin : MonoBehaviour
     playercontroller script;
     [Header("加算するスコア")] public int myScore;
     [Header("プレイヤーの判定")] public PlayerTriggerCheck playerCheck;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +20,6 @@ public class ScoreCoin : MonoBehaviour
     {
         if(playerCheck.isOn){
             if(GameManager.instance != null){
-                //script.jumpCount = 0;
                 GameManager.instance.score += myScore;
                 Destroy(this.gameObject);
             }
