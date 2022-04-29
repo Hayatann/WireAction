@@ -18,9 +18,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
@@ -75,7 +73,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3334}
     - Class: 114
-      Script: {instanceID: 37000}
+      Script: {instanceID: 3428}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -175,7 +173,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3334}
     - Class: 114
-      Script: {instanceID: 5012}
+      Script: {instanceID: 5016}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -244,15 +242,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3334}
     - Class: 114
-      Script: {instanceID: 3536}
+      Script: {instanceID: 3540}
     - Class: 114
-      Script: {instanceID: 3940}
+      Script: {instanceID: 3944}
     - Class: 114
-      Script: {instanceID: 4644}
+      Script: {instanceID: 4648}
     - Class: 114
-      Script: {instanceID: 4798}
+      Script: {instanceID: 4802}
     - Class: 114
-      Script: {instanceID: 5800}
+      Script: {instanceID: 5806}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -337,15 +335,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3334}
     - Class: 114
-      Script: {instanceID: 3536}
+      Script: {instanceID: 3404}
     - Class: 114
-      Script: {instanceID: 3940}
+      Script: {instanceID: 3540}
     - Class: 114
-      Script: {instanceID: 4644}
+      Script: {instanceID: 3944}
     - Class: 114
-      Script: {instanceID: 4798}
+      Script: {instanceID: 4648}
     - Class: 114
-      Script: {instanceID: 38434}
+      Script: {instanceID: 4802}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -410,7 +408,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3334}
     - Class: 114
-      Script: {instanceID: 5290}
+      Script: {instanceID: 5294}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -536,7 +534,7 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: ac7fa5539033b4f583f17a7d7d60fd5b
+      Hash: 86acafe4487d0303c13d109be79c5161
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TimeScript
@@ -692,6 +690,18 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: 4fa9ed4727295856dec7a4b8a2cb0159
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerControllerStage2
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Gameoverstage2
+  - hash:
+      serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -758,7 +768,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: fd603770689195d8c21e05ad28422d62
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ScoreScript
@@ -926,7 +936,7 @@ ScriptsOnlyBuild:
     className: SpriteSkinEntity
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 1d13a7e363573c5e2cd5d70534480102
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GoalSceneScript
@@ -1008,18 +1018,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: playercontroller
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Gameoverstage2
-  - hash:
-      serializedVersion: 2
-      Hash: 4fa9ed4727295856dec7a4b8a2cb0159
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerControllerStage2
   platform: 19
   scenePathNames:
   - Assets/Scenes/TitleScene.unity
@@ -1028,4 +1026,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/GameOver.unity
   - Assets/Scenes/GameOver stage2.unity
   - Assets/Scenes/GoalScene.unity
-  playerPath: E:/WireAction-test2/WireAction_Test.exe
+  playerPath: E:/WireAction/WireAction_Test.exe

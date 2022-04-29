@@ -28,7 +28,7 @@ public class ScoreScript : MonoBehaviour
             scoreText.text = "Score" + GameManager.instance.score;
             oldScore = GameManager.instance.score;
         }
-        Debug.Log(scoreText.text);
+        Debug.Log(getScore());
     }
 
     public static string getScore(){
